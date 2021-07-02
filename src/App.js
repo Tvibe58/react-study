@@ -36,9 +36,9 @@ const { Header, Content, Footer, Sider } = Layout;
 
 const App = () => (
   <div className="App">
-    {/* <Layout>
+    <Layout>
       <Header className="App-header">React</Header>
-    </Layout> */}
+    </Layout>
     <Layout>
       <Sider theme="light"
         breakpoint="lg"
@@ -55,7 +55,7 @@ const App = () => (
           <Menu.Item key="3" icon={<UploadOutlined />}>nav 3</Menu.Item>
           <Menu.Item key="4" icon={<UserOutlined />}>nav 4</Menu.Item>
           <Menu.Item key="5" icon={<UserOutlined />}><Link to="/">home</Link></Menu.Item>
-          <Menu.Item key="6" icon={<UserOutlined />}><Link to="/react-study/about">about</Link></Menu.Item>
+          <Menu.Item key="6" icon={<UserOutlined />}><Link to="/about">about</Link></Menu.Item>
         </Menu>
       </Sider>
       <Content style={{ margin: '24px 16px 0' }}>

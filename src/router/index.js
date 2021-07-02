@@ -8,6 +8,6 @@ const routeConfig = [
     component: Home
   },
   { path: '/home', component: Home },
-  { path: '/react-study/about', component: About }
+  { path: '/about', component: About }
 ]
 export default routeConfig

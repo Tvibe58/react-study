@@ -5,7 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Router } from "react-router";
 import { createBrowserHistory } from "history";
-const history = createBrowserHistory();
+const history = createBrowserHistory({
+  basename: '/react-study'
+})
 
 ReactDOM.render(
   <React.StrictMode>
