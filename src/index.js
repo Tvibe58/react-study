@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Router } from "react-router";
 import { createBrowserHistory, createHashHistory } from "history";
-const history = createHashHistory({
-  basename: '/react-study'
+const history = createBrowserHistory({
+  basename: '/react-study/#'
 })
 
 ReactDOM.render(
