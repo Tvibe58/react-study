@@ -1,7 +1,7 @@
 {
   "name": "react-study",
   "version": "0.1.0",
-  "homepage": "./",
+  "homepage": "https://tvibe58.github.io/react-study",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
