@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => (
   <div>
-    <h1>About Page</h1>
-    <p>这是About页面</p>
+    <h1>关于</h1>
+    <p>本网站仅供学习</p>
   </div>
 )
 

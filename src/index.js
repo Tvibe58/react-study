@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Router } from "react-router";
-import { createBrowserHistory, createHashHistory } from "history";
+import { createBrowserHistory } from "history";
 const history = createBrowserHistory({
   basename: '/react-study/#'
+  // basename: '/react-study'
 })
 
 ReactDOM.render(
