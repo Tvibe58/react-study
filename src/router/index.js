@@ -35,7 +35,6 @@ const routeConfig = [
   },
   {
     path: '',
-    isShow: false,
     component: NotFoud
   }
 ]

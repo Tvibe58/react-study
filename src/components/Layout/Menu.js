@@ -18,8 +18,8 @@ class SiderMenu extends PureComponent {
       location
     } = this.props
 
-    const index = config.baseName.length
-    const pathname = location.pathname.substring(index)
+    const index = (config.baseName + origin).length
+    const pathname = location.href.substring(index)
 
     return (
       <Menu theme="light" mode="inline" defaultSelectedKeys={[pathname]}>
