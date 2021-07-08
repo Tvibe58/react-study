@@ -23,7 +23,7 @@ class Sider extends PureComponent {
           console.log(collapsed, type);
         }}
         style={{ minHeight: '100vh' }}>
-        <SiderMenu menus={menus}></SiderMenu>
+        <SiderMenu menus={menus} location={location}></SiderMenu>
       </Layout.Sider>
     )
   }

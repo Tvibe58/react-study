@@ -1,22 +1,29 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Menu } from 'antd'
-
 import { Link } from 'react-router-dom';
-import { HomeOutlined, TagsOutlined } from '@ant-design/icons';
-
-
+import { config } from '../../config/index'
 class SiderMenu extends PureComponent {
+  generateMenus = data => {
+    return data.map(item => {
+      if (item.menu && item.menu.isShow) {
+        return <Menu.Item key={item.path} icon={item.menu.icon}><Link to={item.path}>{item.menu.name}</Link></Menu.Item>
+      }
+    })
+  }
 
   render () {
     const {
-      menus
+      menus,
+      location
     } = this.props
 
+    const index = config.baseName.length
+    const pathname = location.pathname.substring(index)
+
     return (
-      <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
-        <Menu.Item key="1" icon={<HomeOutlined />}><Link to="/">home</Link></Menu.Item>
-        <Menu.Item key="2" icon={<TagsOutlined />}><Link to="/about">about</Link></Menu.Item>
+      <Menu theme="light" mode="inline" defaultSelectedKeys={[pathname]}>
+        {this.generateMenus(menus)}
       </Menu>
     )
   }

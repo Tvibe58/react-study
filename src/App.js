@@ -8,12 +8,11 @@ import MySider from './components/Layout/Sider'
 const { Content } = Layout;
 export default class App extends Component {
   render () {
-    const menus = routeConfig.map((item, index) => Object.assign([], item, { id: index }));
-    // const menus = routeConfig;
+    const menus = routeConfig;
     const location = window.location
     const siderProps = {
       menus,
-      location,
+      location
     }
 
     return (
