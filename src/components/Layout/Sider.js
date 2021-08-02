@@ -10,17 +10,16 @@ class Sider extends PureComponent {
       menus,
       location
     } = this.props
-    console.log('Sider', this.props)
 
     return (
       <Layout.Sider theme="light"
         breakpoint="lg"
-        collapsedWidth="0"
+        collapsedWidth="60"
         onBreakpoint={broken => {
-          console.log(broken);
+          // console.log(broken);
         }}
         onCollapse={(collapsed, type) => {
-          console.log(collapsed, type);
+          // console.log(collapsed, type);
         }}
         style={{ minHeight: '100vh' }}>
         <SiderMenu menus={menus} location={location}></SiderMenu>
