@@ -1,33 +1,33 @@
 import React from 'react'
-import './Windmill.css'
+import style from './Windmill.module.css'
 
 const Windmill2 = () => (
-  <div className="body">
-    <div className="window">
-      <div className="windmill">
-        <div className="pillar"></div>
-        <div className="dome">
-          <div className="dome-window"></div>
+  <div className={style.windmill_body_wrapper}>
+    <div className={style.window}>
+      <div className={style.windmill}>
+        <div className={style.pillar}></div>
+        <div className={style.dome}>
+          <div className={style.dome_window}></div>
         </div>
-        <div className="windmill-window"></div>
-        <div className="blades">
-          <div className="blade blade-1"></div>
-          <div className="blade blade-2"></div>
-          <div className="blade blade-3"></div>
-          <div className="blade blade-4"></div>
+        <div className={style.windmill_window}></div>
+        <div className={style.blades}>
+          <div className={`${style.blade} ${style.blade_1}`}></div>
+          <div className={`${style.blade} ${style.blade_2}`}></div>
+          <div className={`${style.blade} ${style.blade_3}`}></div>
+          <div className={`${style.blade} ${style.blade_4}`}></div>
         </div>
-        <div className="ramp">
-          <div className="grill"></div>
-          <div className="hook hook-1"></div>
-          <div className="hook hook-2"></div>
-          <div className="hook hook-3"></div>
-          <div className="hook hook-4"></div>
+        <div className={style.ramp}>
+          <div className={style.grill}></div>
+          <div className={`${style.hook} ${style.hook_1}`}></div>
+          <div className={`${style.hook} ${style.hook_2}`}></div>
+          <div className={`${style.hook} ${style.hook_3}`}></div>
+          <div className={`${style.hook} ${style.hook_4}`}></div>
         </div>
       </div>
-      <div className="sun"></div>
-      <div className="land"></div>
-      <div className="grass grass-1"></div>
-      <div className="grass grass-2"></div>
+      <div className={style.sun}></div>
+      <div className={style.land}></div>
+      <div className={`${style.grass} ${style.grass_1}`}></div>
+      <div className={`${style.grass} ${style.grass_2}`}></div>
     </div>
   </div>
 )
