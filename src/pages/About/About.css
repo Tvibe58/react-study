@@ -1,0 +1,9 @@
+.analogClock-wrapper{
+  background: #282828;
+  text-align: center;
+  font-size: 10px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
