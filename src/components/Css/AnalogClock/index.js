@@ -1,27 +1,3 @@
-// import React from 'react'
-// import style from './AnalogClock.module.css'
-
-// const AnalogClock = () => (
-//   <div className={style.style}>
-//     <div className={style.clock}>
-//       <div className={style.outer_clock_face}>
-
-//         <div className={`${style.marking} ${style.marking_one}`}></div>
-//         <div className={`${style.marking} ${style.marking_two}`}></div>
-//         <div className={`${style.marking} ${style.marking_three}`}></div>
-//         <div className={`${style.marking} ${style.marking_four}`}></div>
-//       </div>
-//       <div className={style.inner_clock_face}>
-//         <div className={`${style.hand} ${style.hour_hand}`}></div>
-//         <div className={`${style.hand} ${style.min_hand}`}></div>
-//         <div className={`${style.hand} ${style.second_hand}`}></div>
-//       </div>
-//     </div>
-//   </div>
-// )
-
-// export default AnalogClock
-
 import React, { Component } from 'react';
 import style from './AnalogClock.module.css';
 export default class AnalogClock extends Component {
@@ -30,6 +6,7 @@ export default class AnalogClock extends Component {
     this.secondHand = React.createRef();
     this.minsHand = React.createRef();
     this.hourHand = React.createRef();
+    this.setDateInterval = null;
   }
   secondHandRef = element => {
     this.secondHand = element;
@@ -42,7 +19,6 @@ export default class AnalogClock extends Component {
   };
 
   setDate = () => {
-    console.log('setDate')
     const now = new Date();
 
     const seconds = now.getSeconds();
@@ -59,30 +35,27 @@ export default class AnalogClock extends Component {
   }
 
   componentDidMount () {
-    setInterval(this.setDate, 1000);
-    // clearInterval(this.setDate)
+    this.setDateInterval = setInterval(this.setDate, 1000);
 
     this.setDate();
   }
 
   componentWillUnmount () {
-    clearInterval()
+    clearInterval(this.setDateInterval)
   }
   render () {
     return (
-      <div className={style.style}>
-        <div className={style.clock}>
-          <div className={style.outer_clock_face}>
-            <div className={`${style.marking} ${style.marking_one}`}></div>
-            <div className={`${style.marking} ${style.marking_two}`}></div>
-            <div className={`${style.marking} ${style.marking_three}`}></div>
-            <div className={`${style.marking} ${style.marking_four}`}></div>
-          </div>
-          <div className={style.inner_clock_face}>
-            <div className={`${style.hand} ${style.hour_hand}`} ref={this.hourHandRef}></div>
-            <div className={`${style.hand} ${style.min_hand}`} ref={this.minsHandRef}></div>
-            <div className={`${style.hand} ${style.second_hand}`} ref={this.secondHandRef}></div>
-          </div>
+      <div className={style.clock}>
+        <div className={style.outer_clock_face}>
+          <div className={`${style.marking} ${style.marking_one}`}></div>
+          <div className={`${style.marking} ${style.marking_two}`}></div>
+          <div className={`${style.marking} ${style.marking_three}`}></div>
+          <div className={`${style.marking} ${style.marking_four}`}></div>
+        </div>
+        <div className={style.inner_clock_face}>
+          <div className={`${style.hand} ${style.hour_hand}`} ref={this.hourHandRef}></div>
+          <div className={`${style.hand} ${style.min_hand}`} ref={this.minsHandRef}></div>
+          <div className={`${style.hand} ${style.second_hand}`} ref={this.secondHandRef}></div>
         </div>
       </div>
     );
