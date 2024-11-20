@@ -2,7 +2,6 @@ import { Button, Form, Input, Select, Divider, Col, Row } from 'antd';
 // import React from 'react';
 import React, { useRef, useState } from 'react';
 import './Tools.css'
-const { Option } = Select;
 const layout = {
   labelCol: {
     span: 4,
