@@ -1,0 +1,78 @@
+.box-packing-calculator {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.input-section {
+  margin: 10px 0;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  border: 1px固体 #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result-section {
+  margin-top: 20px;
+}
+
+.box-visualization {
+  perspective: 800px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.big-box {
+  width: 150px;
+  height: 100px;
+  background-color: #FF5733;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(10deg);
+}
+
+.small-box {
+  width: 50px;
+  height: 30px;
+  background-color: #33FF57;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(10deg);
+}
+
+.dimension-label {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}

@@ -1,0 +1,11 @@
+.page-tools {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 4px;
+}
+
+.tools-container {
+  max-width: 1000px;
+}

@@ -33,7 +33,7 @@ export default class App extends Component {
         <Layout>
           <MySider {...siderProps}></MySider>
           <Content style={{ margin: '24px 16px 0' }}>
-            <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+            <div className="site-layout-background" style={{ minHeight: 360 }}>
               {renderRoutes(routeConfig)}
             </div>
           </Content>

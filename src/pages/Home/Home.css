@@ -2,3 +2,8 @@
   height: 400px;
   font-size: 9px;
 }
+.page-home {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 4px;
+}

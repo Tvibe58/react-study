@@ -5,7 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Router } from "react-router";
 import { createBrowserHistory } from "history";
-import { config } from './config/index'
+import { config } from './config/index';
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/es/locale/zh_CN';
 const history = createBrowserHistory({
   basename: config.baseName
 })
@@ -17,7 +19,9 @@ ReactDOM.render(
   //   </Router>
   // </React.StrictMode>,
   <Router history={history}>
-    <App />
+    <ConfigProvider locale={zhCN}>
+      <App />
+    </ConfigProvider>
   </Router>,
   document.getElementById('root')
 );

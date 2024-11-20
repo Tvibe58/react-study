@@ -2,12 +2,15 @@ import Home from '../pages/Home/Home'
 // import CreateApp from '../pages/CreateApp/CreateApp'
 import Demo from '../pages/Demo/Demo'
 import About from '../pages/About/About'
+import Tools from '../pages/Tools/Tools'
+import Box from '../pages/Box/Box'
 import NotFoud from '../pages/NotFoud/NotFoud'
 import {
   HomeOutlined,
   BorderOutlined,
   TableOutlined,
-  TagsOutlined
+  TagsOutlined,
+  ToolOutlined,
 } from '@ant-design/icons';
 
 const routeConfig = [
@@ -28,6 +31,24 @@ const routeConfig = [
       icon: <HomeOutlined />
     }
   },
+  {
+    path: '/tools',
+    component: Tools,
+    menu: {
+      isShow: true,
+      name: '装货计算工具',
+      icon: <ToolOutlined />
+    }
+  },
+  // {
+  //   path: '/box',
+  //   component: Box,
+  //   menu: {
+  //     isShow: true,
+  //     name: '装货计算工具2',
+  //     icon: <ToolOutlined />
+  //   }
+  // },
   // {
   //   path: '/create',
   //   // exact: true,
