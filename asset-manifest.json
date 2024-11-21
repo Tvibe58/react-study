@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-study/static/css/main.463656fd.chunk.css",
-    "main.js": "/react-study/static/js/main.0e761060.chunk.js",
-    "main.js.map": "/react-study/static/js/main.0e761060.chunk.js.map",
-    "runtime-main.js": "/react-study/static/js/runtime-main.0c22a5b3.js",
-    "runtime-main.js.map": "/react-study/static/js/runtime-main.0c22a5b3.js.map",
+    "main.css": "/react-study/static/css/main.6ad83f1f.chunk.css",
+    "main.js": "/react-study/static/js/main.b172c5f8.chunk.js",
+    "main.js.map": "/react-study/static/js/main.b172c5f8.chunk.js.map",
+    "runtime-main.js": "/react-study/static/js/runtime-main.08a6cf7a.js",
+    "runtime-main.js.map": "/react-study/static/js/runtime-main.08a6cf7a.js.map",
     "static/css/2.ba8a8a05.chunk.css": "/react-study/static/css/2.ba8a8a05.chunk.css",
-    "static/js/2.1f978383.chunk.js": "/react-study/static/js/2.1f978383.chunk.js",
-    "static/js/2.1f978383.chunk.js.map": "/react-study/static/js/2.1f978383.chunk.js.map",
-    "static/js/3.319e5a21.chunk.js": "/react-study/static/js/3.319e5a21.chunk.js",
-    "static/js/3.319e5a21.chunk.js.map": "/react-study/static/js/3.319e5a21.chunk.js.map",
+    "static/js/2.5f8623d9.chunk.js": "/react-study/static/js/2.5f8623d9.chunk.js",
+    "static/js/2.5f8623d9.chunk.js.map": "/react-study/static/js/2.5f8623d9.chunk.js.map",
+    "static/js/3.e540da94.chunk.js": "/react-study/static/js/3.e540da94.chunk.js",
+    "static/js/3.e540da94.chunk.js.map": "/react-study/static/js/3.e540da94.chunk.js.map",
     "index.html": "/react-study/index.html",
     "static/css/2.ba8a8a05.chunk.css.map": "/react-study/static/css/2.ba8a8a05.chunk.css.map",
-    "static/css/main.463656fd.chunk.css.map": "/react-study/static/css/main.463656fd.chunk.css.map",
-    "static/js/2.1f978383.chunk.js.LICENSE.txt": "/react-study/static/js/2.1f978383.chunk.js.LICENSE.txt"
+    "static/css/main.6ad83f1f.chunk.css.map": "/react-study/static/css/main.6ad83f1f.chunk.css.map",
+    "static/js/2.5f8623d9.chunk.js.LICENSE.txt": "/react-study/static/js/2.5f8623d9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0c22a5b3.js",
+    "static/js/runtime-main.08a6cf7a.js",
     "static/css/2.ba8a8a05.chunk.css",
-    "static/js/2.1f978383.chunk.js",
-    "static/css/main.463656fd.chunk.css",
-    "static/js/main.0e761060.chunk.js"
+    "static/js/2.5f8623d9.chunk.js",
+    "static/css/main.6ad83f1f.chunk.css",
+    "static/js/main.b172c5f8.chunk.js"
   ]
 }
