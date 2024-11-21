@@ -1,6 +1,5 @@
-import { Button, Form, Input, Select, Divider, Col, Row } from 'antd';
-// import React from 'react';
-import React, { useRef, useState } from 'react';
+import { Button, Form, Input, Divider, Col, Row } from 'antd';
+import React, { useState } from 'react';
 import './Tools.css'
 const layout = {
   labelCol: {
@@ -24,53 +23,41 @@ const tailLayout = {
 };
 const App = () => {
   const [form] = Form.useForm();
-  // let result = null;
-  // const result = useRef(null);
   const [result, setResult] = useState(null);
-  // const onGenderChange = (value) => {
-  //   switch (value) {
-  //     case 'male':
-  //       form.setFieldsValue({
-  //         note: 'Hi, man!',
-  //       });
-  //       return;
-  //     case 'female':
-  //       form.setFieldsValue({
-  //         note: 'Hi, lady!',
-  //       });
-  //       return;
-  //     case 'other':
-  //       form.setFieldsValue({
-  //         note: 'Hi there!',
-  //       });
-  //   }
-  // };
   const onFinish = (values) => {
-    console.log(values);
-    const result = countBoxes(values.a, values.b, values.c, values.x, values.y, values.z)
-    // result.setFieldsValue(result)
-    console.log('result:', result)
+    const result = maxBoxes(values.a, values.b, values.c, values.x, values.y, values.z)
     setResult(result)
   };
   const onReset = () => {
     form.resetFields();
+    setResult(null)
   };
-  const countBoxes = (a, b, c, x, y, z) => {
-    // 计算沿大箱子长方向能摆放小箱子的数量，向下取整
-    let alongLength = Math.floor(a / x);
-    // 计算沿大箱子宽方向能摆放小箱子的数量，向下取整
-    let alongWidth = Math.floor(b / y);
-    // 计算沿大箱子高方向能摆放小箱子的数量，向下取整
-    let alongHeight = Math.floor(c / z);
+  // const countBoxes = (a, b, c, x, y, z) => {
+  //   // 计算沿大箱子长方向能摆放小箱子的数量，向下取整
+  //   let alongLength = Math.floor(a / x);
+  //   // 计算沿大箱子宽方向能摆放小箱子的数量，向下取整
+  //   let alongWidth = Math.floor(b / y);
+  //   // 计算沿大箱子高方向能摆放小箱子的数量，向下取整
+  //   let alongHeight = Math.floor(c / z);
 
-    return alongLength * alongWidth * alongHeight;
+  //   return alongLength * alongWidth * alongHeight;
+  // }
+  const maxBoxes = (A, B, C, a, b, c) => {
+    // 常规摆放方式
+    let n1 = Math.floor(A / a) * Math.floor(B / b) * Math.floor(C / c);
+    // 第一种旋转摆放方式
+    let n2 = Math.floor(A / b) * Math.floor(B / a) * Math.floor(C / c);
+    // 第二种旋转摆放方式
+    let n3 = Math.floor(A / c) * Math.floor(B / a) * Math.floor(C / b);
+    // 第三种旋转摆放方式
+    let n4 = Math.floor(A / c) * Math.floor(B / b) * Math.floor(C / a);
+    // 第四种旋转摆放方式
+    let n5 = Math.floor(A / a) * Math.floor(B / c) * Math.floor(C / b);
+    // 第五种旋转摆放方式
+    let n6 = Math.floor(A / b) * Math.floor(B / c) * Math.floor(C / a);
+    console.log(n1, n2, n3, n4, n5, n6)
+    return Math.max(n1, n2, n3, n4, n5, n6);
   }
-  // const onFill = () => {
-  //   form.setFieldsValue({
-  //     note: 'Hello world!',
-  //     gender: 'male',
-  //   });
-  // };
   return (
     <div className="page-tools">
       <div className="tools-container">

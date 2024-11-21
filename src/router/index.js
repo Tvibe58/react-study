@@ -1,14 +1,13 @@
 import Home from '../pages/Home/Home'
-// import CreateApp from '../pages/CreateApp/CreateApp'
-import Demo from '../pages/Demo/Demo'
+// import Demo from '../pages/Demo/Demo'
 import About from '../pages/About/About'
 import Tools from '../pages/Tools/Tools'
-import Box from '../pages/Box/Box'
+// import Box from '../pages/Box/Box'
 import NotFoud from '../pages/NotFoud/NotFoud'
 import {
   HomeOutlined,
-  BorderOutlined,
-  TableOutlined,
+  // BorderOutlined,
+  // TableOutlined,
   TagsOutlined,
   ToolOutlined,
 } from '@ant-design/icons';
@@ -50,46 +49,25 @@ const routeConfig = [
   //   }
   // },
   // {
-  //   path: '/create',
-  //   // exact: true,
-  //   component: CreateApp,
+  //   path: '/demo',
+  //   component: Demo,
   //   menu: {
   //     isShow: true,
-  //     name: '创建项目',
+  //     name: '示例',
   //     icon: <BorderOutlined />
   //   },
   //   routes: [
   //     {
-  //       path: '/create/about',
-  //       component: CreateApp,
+  //       path: '/demo/list',
+  //       component: Demo,
   //       menu: {
   //         isShow: true,
-  //         name: '创建项目',
-  //         icon: <TagsOutlined />
+  //         name: '列表',
+  //         icon: <TableOutlined />
   //       }
   //     }
   //   ]
   // },
-  {
-    path: '/demo',
-    component: Demo,
-    menu: {
-      isShow: true,
-      name: '示例',
-      icon: <BorderOutlined />
-    },
-    routes: [
-      {
-        path: '/demo/list',
-        component: Demo,
-        menu: {
-          isShow: true,
-          name: '列表',
-          icon: <TableOutlined />
-        }
-      }
-    ]
-  },
   {
     path: '/about',
     component: About,

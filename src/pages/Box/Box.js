@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Box.css';
 
 const BoxPackingCalculator = () => {
     // 大箱子的长、宽、高状态
-    const [bigBoxLength, setBigBoxLength] = useState(0);
-    const [bigBoxWidth, setBigBoxWidth] = useState(0);
-    const [bigBoxHeight, setBigBoxHeight] = useState(0);
+    const [bigBoxLength, setBigBoxLength] = useState(null);
+    const [bigBoxWidth, setBigBoxWidth] = useState(null);
+    const [bigBoxHeight, setBigBoxHeight] = useState(null);
 
     // 小箱子的长、宽、高状态
-    const [smallBoxLength, setSmallBoxLength] = useState(0);
-    const [smallBoxWidth, setSmallBoxWidth] = useState(0);
-    const [smallBoxHeight, setSmallBoxHeight] = useState(0);
+    const [smallBoxLength, setSmallBoxLength] = useState(null);
+    const [smallBoxWidth, setSmallBoxWidth] = useState(null);
+    const [smallBoxHeight, setSmallBoxHeight] = useState(null);
 
     // 能装下的小箱子数量状态
-    const [numBoxes, setNumBoxes] = useState(0);
+    const [numBoxes, setNumBoxes] = useState(null);
 
     // 计算能装小箱子数量的函数
     const calculateBoxes = () => {
